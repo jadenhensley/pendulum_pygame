@@ -99,6 +99,7 @@ def update(window, obj_group):
 
 
 def main():
+    global gravity
     run = True
     clock = pygame.time.Clock()
 
@@ -128,6 +129,7 @@ def main():
                 pendulum.angle_acceleration = 0
                 pendulum.angle = pi/4
                 pendulum.timer = 0
+                gravity = .01
         
         update(win, objects_group)
 
